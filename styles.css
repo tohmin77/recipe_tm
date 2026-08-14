@@ -81,6 +81,23 @@ a { color: inherit; }
   color: var(--ink);
   text-decoration: none;
 }
+.site-nav .nav-right {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+.site-nav .nav-link {
+  font-size: 0.82rem;
+  letter-spacing: 0.02em;
+  color: var(--text-soft);
+  text-decoration: none;
+  font-weight: 600;
+  white-space: nowrap;
+}
+.site-nav .nav-link:hover { color: var(--lacquer); }
+@media (max-width: 560px) {
+  .site-nav .nav-link { display: none; }
+}
 .site-nav .nav-cta {
   display: inline-flex;
   align-items: center;
@@ -89,14 +106,14 @@ a { color: inherit; }
   letter-spacing: 0.14em;
   text-transform: uppercase;
   color: var(--card);
-  background: var(--lacquer);
+  background: var(--olive);
   padding: 0.6rem 1.1rem;
   border-radius: 999px;
   font-weight: 700;
   text-decoration: none;
   white-space: nowrap;
 }
-.site-nav .nav-cta:hover { background: var(--lacquer-deep); }
+.site-nav .nav-cta:hover { background: #566138; }
 
 /* ---------- HERO ---------- */
 .hero {
@@ -244,15 +261,15 @@ a { color: inherit; }
   font-size: 0.78rem;
   letter-spacing: 0.14em;
   text-transform: uppercase;
-  color: var(--ink);
-  background: var(--saffron);
+  color: var(--card);
+  background: var(--olive);
   padding: 0.9rem 1.7rem;
   border-radius: 999px;
   font-weight: 700;
   text-decoration: none;
   white-space: nowrap;
 }
-.reserve-banner-cta:hover { background: #dcae5f; }
+.reserve-banner-cta:hover { background: #566138; }
 
 /* ---------- RECIPE INDEX ---------- */
 .index {
